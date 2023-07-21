@@ -45,7 +45,7 @@
                                 </v-card>
                             </v-col>
                         </v-row>
-
+                        
                     </v-col>
 
                     <div class="vertical-line"></div>
@@ -89,7 +89,6 @@
                         เสร็จสิ้นการยืนยันตัวตน
                     </p>
                 </v-card>
-                <p>{{ formattedDate }}</p>
             </v-col>
         </v-row>
 
@@ -98,42 +97,9 @@
 </template>
 
 <script>
-import {
-    format
-} from 'date-fns';
-import {
-    th
-} from 'date-fns/locale';
 
 export default {
-    data() {
-        return {
-            currentDate: new Date(),
-        };
-    },
-    computed: {
-        formattedDate() {
-            // return format(this.currentDate, 'd MMMM yyyy HH:mm', {
-            //     locale: this.locale
-            // });
 
-            const thaiLocale = th; // ใช้โมดูลที่นำเข้ามาแทนค่าเป็น thaiLocale
-
-            const formattedDay = format(this.currentDate, 'd', {
-                locale: thaiLocale
-            });
-            const formattedMonth = format(this.currentDate, 'MMMM', {
-                locale: thaiLocale
-            });
-            const formattedYear = format(this.currentDate, 'yyyy', {
-                locale: thaiLocale
-            });
-            // const formattedTime = format(this.currentDate, 'HH:mm', {
-            //     locale: thaiLocale
-            // });
-            return `${formattedDay} ${formattedMonth} ${formattedYear}`;
-        },
-    },
 }
 </script>
 
@@ -154,6 +120,6 @@ export default {
 .vertical-line {
     width: 2px;
     height: 430px;
-    background-color: rgb(192, 186, 186);
+    background-color: rgb(226, 226, 226);
 }
 </style>
