@@ -26,7 +26,7 @@
                                 <p class="mb-2">1 มกราคม 1970 - 13:00</p>
                                 <p class="mb-2">ซันนี่ ฮันยา</p>
                                 <p class="mb-2">9กก 9999</p>
-                                <v-col cols="5" class="ml-auto text-center justify-end">
+                                <v-col cols="6" class="ml-auto text-center justify-end">
                                     <v-card @click="click" class=" mt-2 py-0" id="rounded-card" :elevation="elevation" style="padding-top:1vh;  background-color: hsl(216, 100%, 19%); color: white; cursor: pointer;">
                                         <p class="my-2 mt-3 mb-4 mx-1" style="font-size: 16px;">
                                             แก้ไขข้อมูล
