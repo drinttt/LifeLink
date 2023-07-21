@@ -3,7 +3,8 @@
     <v-container fluid fill-height>
         <v-row justify='center' class="no-gutters" style="padding-top:10vh">
             <v-col cols="8" class="text-center">
-                <v-icon style="font-size: 150px; color: hsl(216, 100%, 19%);">mdi-credit-card-plus-outline</v-icon>
+                <!-- <v-icon style="font-size: 150px; color: hsl(216, 100%, 19%);">mdi-credit-card-plus-outline</v-icon> -->
+                <img alt="Vue logo" class="logo" src="@/assets/insert_card.png" width="210" height="200" />
             </v-col>
 
             <v-col cols="8" class="text-center setFont">

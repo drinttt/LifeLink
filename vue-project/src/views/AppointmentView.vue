@@ -1,7 +1,7 @@
 <template>
 <v-app class="bg-grey-lighten-5">
     <v-container fluid fill-height>
-        <v-row justify='center' class="no-gutters" style="padding-top:2vh">
+        <v-row justify='center' class="no-gutters setFont" style="padding-top:10vh">
             <!-- logo + date + time -->
             <v-col cols="10" class="py-0">
                 <v-row style="align-items: flex-end;">
@@ -24,7 +24,6 @@
                         </v-row>
                     </v-col>
                 </v-row>
-
             </v-col>
 
             <v-col cols="10" class="py-0">
@@ -44,34 +43,10 @@
             </v-col>
 
             <v-col cols="10">
-                <v-card class="BDradius15" id="rounded-card" :elevation="elevation" style="padding-top:1vh; padding-bottom: 1vh; background-color: hsl(216, 100%, 19%); color: white; cursor: pointer;">
-                    <v-row class="px-16 my-3">
-                        <v-col cols="6" class="pr-2">
-                            <h1>รถขาเข้า</h1>
-                            <v-card class="mr-16 mt-3 BDradius15">
-                                <v-container>
-                                    <p>ชื่อ: </p>
-                                    <p>ทะเบียนรถ:</p>
-                                    <p>วันที่ติดต่อ:</p>
-                                    <p>เข้าได้ถึงวันที่:</p>
-                                    <p style="color: red;">เวลาที่เข้าจุดตรวจ:</p>
-                                </v-container>
-                            </v-card>
-                        </v-col>
-
-                        <v-col cols="6" class="pl-2">
-                            <h1>รถขาออก</h1>
-                            <v-card class="mr-16 mt-3 BDradius15">
-                                <v-container>
-                                    <p>ชื่อ: </p>
-                                    <p>ทะเบียนรถ:</p>
-                                    <p>วันที่ติดต่อ:</p>
-                                    <p>เข้าได้ถึงวันที่:</p>
-                                    <p style="color: red;">เวลาที่เข้าจุดตรวจ:</p>
-                                </v-container>
-                            </v-card>
-                        </v-col>
-                    </v-row>
+                <v-card @click="click" class="bg-red-darken-4 BDradius15" id="rounded-card" :elevation="elevation" style="padding-top:1vh; cursor: pointer;">
+                    <p class="my-4 mx-4" style="font-size: 21px;">
+                        <v-icon class="mr-4 mb-1">mdi-exit-to-app</v-icon>ออก
+                    </p>
                 </v-card>
             </v-col>
 
@@ -115,6 +90,10 @@ export default {
     },
     computed: {
         formattedDate() {
+            // return format(this.currentDate, 'd MMMM yyyy HH:mm', {
+            //     locale: this.locale
+            // });
+
             const thaiLocale = th; // ใช้โมดูลที่นำเข้ามาแทนค่าเป็น thaiLocale
 
             const formattedDay = format(this.currentDate, 'd', {
@@ -123,7 +102,8 @@ export default {
             const formattedMonth = format(this.currentDate, 'MMMM', {
                 locale: thaiLocale
             });
-            
+
+            // const formattedYear = format(this.currentDate, 'yyyy', { locale: thaiLocale }) + 543;
             const formattedYear = parseInt(format(this.currentDate, 'yyyy', { locale: thaiLocale })) + 543;
             return `${formattedDay} ${formattedMonth} ${formattedYear}`;
         },
@@ -142,13 +122,13 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
 
-.BDradius15 {
-    border-radius: 15px;
+.setFont {
     font-family: 'Kanit', sans-serif;
     ;
 }
 
-.setFont {
+.BDradius15 {
+    border-radius: 15px;
     font-family: 'Kanit', sans-serif;
     ;
 }
