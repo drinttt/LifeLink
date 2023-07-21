@@ -50,11 +50,22 @@
                             <h1>รถขาเข้า</h1>
                             <v-card class="mr-16 mt-3 BDradius15">
                                 <v-container>
-                                    <p>ชื่อ: </p>
-                                    <p>ทะเบียนรถ:</p>
-                                    <p>วันที่ติดต่อ:</p>
-                                    <p>เข้าได้ถึงวันที่:</p>
-                                    <p style="color: red;">เวลาที่เข้าจุดตรวจ:</p>
+                                    <v-row>
+                                        <v-col cols="6" class="pr-0">
+                                            <p>ชื่อ: </p>
+                                            <p>ทะเบียนรถ:</p>
+                                            <p>วันที่ติดต่อ:</p>
+                                            <p>เข้าได้ถึงวันที่:</p>
+                                            <p style="color: red;">เวลาที่เข้าจุดตรวจ:</p>
+                                        </v-col>
+                                        <v-col cols="6" class="pl-0">
+                                            <p>กระติก อิ่มใจ</p>
+                                            <p>กบ 1223</p>
+                                            <p>5 พ.ค. 2565</p>
+                                            <p>8 พ.ค. 2565</p>
+                                            <p style="color: red;">11:00</p>
+                                        </v-col>
+                                    </v-row>
                                 </v-container>
                             </v-card>
                         </v-col>
@@ -63,11 +74,22 @@
                             <h1>รถขาออก</h1>
                             <v-card class="mr-16 mt-3 BDradius15">
                                 <v-container>
-                                    <p>ชื่อ: </p>
-                                    <p>ทะเบียนรถ:</p>
-                                    <p>วันที่ติดต่อ:</p>
-                                    <p>เข้าได้ถึงวันที่:</p>
-                                    <p style="color: red;">เวลาที่เข้าจุดตรวจ:</p>
+                                    <v-row>
+                                        <v-col cols="6" class="pr-0">
+                                            <p>ชื่อ: </p>
+                                            <p>ทะเบียนรถ:</p>
+                                            <p>วันที่ติดต่อ:</p>
+                                            <p>เข้าได้ถึงวันที่:</p>
+                                            <p style="color: red;">เวลาที่เข้าจุดตรวจ:</p>
+                                        </v-col>
+                                        <v-col cols="6" class="pl-0">
+                                            <p>กระติก อิ่มใจ</p>
+                                            <p>กบ 1223</p>
+                                            <p>5 พ.ค. 2565</p>
+                                            <p>8 พ.ค. 2565</p>
+                                            <p style="color: red;">11:00</p>
+                                        </v-col>
+                                    </v-row>
                                 </v-container>
                             </v-card>
                         </v-col>
