@@ -43,7 +43,7 @@
             </v-col>
 
             <v-col cols="10">
-                <v-card @click="click" class="bg-red-darken-4 BDradius15" id="rounded-card" :elevation="elevation" style="padding-top:1vh; cursor: pointer;">
+                <v-card @click="click" class="BDradius15" id="rounded-card" :elevation="elevation" style="padding-top:1vh; background-color: #880304; color: white; cursor: pointer; ">
                     <p class="my-4 mx-4" style="font-size: 21px;">
                         <v-icon class="mr-4 mb-1">mdi-exit-to-app</v-icon>ออก
                     </p>

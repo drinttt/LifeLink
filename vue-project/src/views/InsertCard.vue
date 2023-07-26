@@ -23,7 +23,7 @@
             </v-col>
 
             <v-col cols="4" class="text-center setFont">
-                <v-card @click="click" class="bg-red-darken-4 BDradius15" id="rounded-card" :elevation="elevation" style="padding-top:1vh; cursor: pointer;">
+                <v-card @click="click" class="BDradius15" id="rounded-card" :elevation="elevation" style="padding-top:1vh; background-color: #880304; color: white; cursor: pointer; ">
                     <p class="my-3 mb-4 mx-4" style="font-size: 21px;">
                         ไม่มีบัตร / ไม่สามารถอ่านข้อมูลบัตรได้
                     </p>
