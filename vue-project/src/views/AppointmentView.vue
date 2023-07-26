@@ -51,7 +51,6 @@
             </v-col>
 
             <v-col cols="4" class="py-0">
-                <!-- <img alt="Vue logo" class="logo" src="@/assets/main_logo.png" width="220" height="120" /> -->
                 <v-row>
                     <v-col cols="6" class="px-3 text-right">
                         <p class="my-4 mt-6 my-text-light setFont" style="font-size: 24px; color: grey">
@@ -108,7 +107,7 @@ export default {
             return `${formattedDay} ${formattedMonth} ${formattedYear}`;
         },
         formattedTime() {
-            const thaiLocale = th; // ใช้โมดูลที่นำเข้ามาแทนค่าเป็น thaiLocale
+            const thaiLocale = th;
 
             const formattedTime = format(this.currentDate, 'HH:mm', {
                 locale: thaiLocale
