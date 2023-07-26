@@ -117,12 +117,8 @@
 </template>
 
 <script>
-import {
-    format
-} from 'date-fns';
-import {
-    th
-} from 'date-fns/locale';
+import { format } from 'date-fns';
+import { th } from 'date-fns/locale';
 
 export default {
     data() {

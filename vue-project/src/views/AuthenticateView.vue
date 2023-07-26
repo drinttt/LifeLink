@@ -22,8 +22,8 @@
                             <v-col cols="8" style="font-size: 18px;">
                                 <p class="mb-2">จอห์น ซีด</p>
                                 <p class="mb-2">ขอเข้าพบคุณฟ้า</p>
-                                <p class="mb-2">1 มกราคม 1970 - 12:00</p>
-                                <p class="mb-2">1 มกราคม 1970 - 13:00</p>
+                                <p class="mb-2">1 มกราคม 1970 12:00</p>
+                                <p class="mb-2">1 มกราคม 1970 13:00</p>
                                 <p class="mb-2">ซันนี่ ฮันยา</p>
                                 <p class="mb-2">9กก 9999</p>
                                 <v-col cols="6" class="ml-auto text-center justify-end">
