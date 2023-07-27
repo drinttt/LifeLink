@@ -89,11 +89,7 @@ export default {
     },
     computed: {
         formattedDate() {
-            // return format(this.currentDate, 'd MMMM yyyy HH:mm', {
-            //     locale: this.locale
-            // });
-
-            const thaiLocale = th; // ใช้โมดูลที่นำเข้ามาแทนค่าเป็น thaiLocale
+            const thaiLocale = th;
 
             const formattedDay = format(this.currentDate, 'd', {
                 locale: thaiLocale
@@ -102,7 +98,6 @@ export default {
                 locale: thaiLocale
             });
 
-            // const formattedYear = format(this.currentDate, 'yyyy', { locale: thaiLocale }) + 543;
             const formattedYear = parseInt(format(this.currentDate, 'yyyy', { locale: thaiLocale })) + 543;
             return `${formattedDay} ${formattedMonth} ${formattedYear}`;
         },
