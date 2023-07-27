@@ -2,7 +2,7 @@
 <v-app class="bg-grey-lighten-5">
     <v-container fluid fill-height>
         <v-row justify='center' class="no-gutters" style="padding-top:2vh">
-            <!-- logo + date + time -->
+            <!-- logo LifeLink + date + time -->
             <v-col cols="10" class="py-0">
                 <v-row style="align-items: flex-end;">
                     <v-col cols="6">
